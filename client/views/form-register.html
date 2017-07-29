@@ -1,0 +1,71 @@
+
+
+	 <form >
+
+            <div class="form-register-with-email">
+
+                <div class="form-white-background">
+
+                    <div class="form-title-row">
+                        <h1>Create an account</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" ng-model="register.name
+                            ">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" ng-model="register.email">
+                        </label>
+                    </div>
+                    <div>
+                    <div >
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" ng-model="register.conpassword" >
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Confirm password</span>
+                            <input type="password"  ng-model="register.password">
+                        </label>
+                    </div>
+                    <div ng-if="register.conpassword != register.password">Passwords do not Match</div>
+                    </div>
+                 
+</div>
+
+
+                    <div class="form-row">
+                        <label class="form-checkbox">
+                            <input class="new" type="checkbox" checked>
+                            <span>I agree to the <a href="#">terms and conditions</a></span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <button ng-click="submit(register)">Register</button>
+                    </div>
+
+                    <span class="form-log-in-with-existing">Already have an account?<a ui-sref="login"> <b>login</b></a></span>
+
+                </div>
+
+                
+
+            </div>
+
+            
+
+        </form>
+
+    
+

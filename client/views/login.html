@@ -1,0 +1,12 @@
+  <div class="inner-container">
+    
+    <div class="box" ng-init="login.check=1;">
+      <h1>Login</h1>
+      <input type="text"  ng-model="login.email"/>
+      <input type="password"  ng-model="login.password"/>
+  
+      <div class="alerting" ng-if="login.check==0">You have entered wrong credentials</div>
+      <button ng-click="submit(login) ">Login</button>
+      <p>Not joined us yet? <span><b><a ui-sref="signup">Sign Up</a></b></span></p>
+    </div>
+</div>

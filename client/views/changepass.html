@@ -1,0 +1,112 @@
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
+
+    
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+              <div class="simple-text">WELCOME  <span style="border-left: 10px;"></span></div> 
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="#/dash">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/profile">
+                        <i class="pe-7s-user"></i>
+                        <p>View Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/map">
+                        <i class="pe-7s-map-marker"></i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+                
+				<!--    <li class="active-pro">
+                    <a href="upgrade.html">
+                        <i class="pe-7s-rocket"></i>
+                        <p>hhh</p>
+                    </a>
+                </li> -->
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel" >
+        <nav  style="background-color:  #0040ff" class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    
+                    <a class="navbar-brand" href="#/dash">Dashboard</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                    
+                    </ul>
+
+				<ul class="nav navbar-nav navbar-right">
+                        
+                        <li class="dropdown">
+                              <a  class="dropdown-toggle" data-toggle="dropdown">
+                                    Settings
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Change Password</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#/logout">Log Out</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#/logout">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </nav>
+
+       <div style="  margin-left: 130px; margin-top: 40px;  font-weight: bold;; color: ;" ng-init="p.email=email; p.check=0;" >
+
+
+                <div style="font-size:15px;">
+                Enter current Password : <input style="margin-left: 5px; width: 250px height:11px; " type="password" ng-model="p.oldpassword">
+                <br><br>
+                Enter new Password :<input style="margin-left: 31px; width: 250px height:11px; " type="password" ng-model="newpassword">
+                <br><br>
+                
+
+                Confirm new Password :<input style="margin-left: 12px; width: 250px height:11px; " type="password" ng-model="p.newpassword">
+                </div>
+
+                <div  style="margin-left: 200px; margin-top: 10px; color: #ff3333; " ng-if="p.newpassword != newpassword">Passwords do not Match</div>
+
+                
+                <button style="margin-top: 15px; margin-left: 200px; width: 80px; height: 35px; border-radius: 5px; border-width: 0px; background-color:#0033cc;" ng-click="change(p)"><div style="color: #ffffff; ">Change</div></button>
+
+                <div style="margin-top: 10px; margin-left: 100px; color: ##ff3333" ng-if="p.check">Password Changed successfully!!</div>
+
+
+
+       </div>
+
+
+
+
+
+                                
+        
+        
+
+
+        
+
+    </div>
+</div>
