@@ -47,7 +47,7 @@ var express = require('express'),
 	var db = mongoose.connection;
 
 	db.once('open', function callback () {
-  		log.debug({data:'Database is Connected'});
+  		log.debug({data:'Database is Connected with the server'});
   		new controllerWrapper(app,mongoose,log);
 	});
 
